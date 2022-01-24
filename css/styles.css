@@ -126,6 +126,21 @@ body {
   background-color: var(--futer-backgraund-color);
 }
 
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/4-1.jpg');
+
+  /* background-image: url('../images/4-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  outline: 1px solid tomato; */
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -136,7 +151,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  background-color: #2f303a;
+  /* background-color: #2f303a; */
 }
 
 .more-link {
@@ -190,6 +205,8 @@ body {
 .filter-button:hover {
   color: var(--white-color);
   background-color: var(--texts-backgraund-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -207,6 +224,12 @@ body {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.portfolio-link:focus,
+.portfolio-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title-text {
@@ -311,17 +334,12 @@ body {
 
 /* ------images чем мы занимаемся------------ */
 
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.images-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .images-list {
   display: flex;
-}
-
-.team-link:not(:last-child) {
-  margin-right: 30px;
 }
 
 .images {
@@ -353,8 +371,14 @@ body {
   display: flex;
 }
 
-.images-item:not(:last-child) {
+.team-link:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-link {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-img {
