@@ -286,7 +286,7 @@ body {
 
 .portfolio-img {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .list {
@@ -310,7 +310,20 @@ body {
 }
 
 .worth {
-  padding: 94px 215px 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94;
+}
+
+.items::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: ;
+  outline: 1px solid tomato;
 }
 
 .worth-title {
@@ -383,7 +396,7 @@ body {
 
 .team-img {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .team-title-text {
@@ -442,7 +455,7 @@ footer {
   letter-spacing: 0.03em;
   color: var(--address-futer-color);
 }
-.auth-navs.list:not(:last-child) {
+.footer-list:not(:last-child) {
   margin-bottom: 9px;
 }
 
